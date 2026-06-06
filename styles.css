@@ -21,6 +21,8 @@ html, body { background-color: #04060a; }         /* near-black like confident-a
     transparent var(--grid-dot-radius)
   );
   background-size: var(--grid-size) var(--grid-size);
+  /* soften the grid so it sits behind text */
+  filter: blur(1.4px);
 }
 
 /* Cursor-reactive overlay */
@@ -29,6 +31,8 @@ html, body { background-color: #04060a; }         /* near-black like confident-a
   inset: 0;
   z-index: 0;
   pointer-events: none;
+  /* soften the reactive dots/lines for readability */
+  filter: blur(1.4px);
 }
 
 /* ===== Navbar scrolled state ===== */
